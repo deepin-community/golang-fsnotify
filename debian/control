@@ -1,0 +1,29 @@
+Source: golang-fsnotify
+Maintainer: Debian Go Packaging Team <team+pkg-go@tracker.debian.org>
+Uploaders: Tianon Gravi <tianon@debian.org>,
+           Anthony Fok <foka@debian.org>,
+           Martín Ferrari <tincho@debian.org>,
+Section: devel
+Testsuite: autopkgtest-pkg-go
+Priority: optional
+Build-Depends: debhelper-compat (= 13),
+               dh-golang,
+               golang-any,
+               golang-golang-x-sys-dev,
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/go-team/packages/golang-fsnotify
+Vcs-Git: https://salsa.debian.org/go-team/packages/golang-fsnotify.git
+Homepage: https://fsnotify.org/
+Rules-Requires-Root: no
+XS-Go-Import-Path: github.com/fsnotify/fsnotify
+
+Package: golang-github-fsnotify-fsnotify-dev
+Architecture: all
+Multi-Arch: foreign
+Depends: golang-golang-x-sys-dev,
+         ${misc:Depends},
+Description: File system notifications for Go
+ Package fsnotify provides a platform-independent interface for file system
+ notifications, for use with the Go programming language.
+ .
+ This package contains the fsnotify library source.
