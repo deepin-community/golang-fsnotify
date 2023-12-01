@@ -1,6 +1,6 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: github.com/fsnotify/fsnotify
 Source: https://github.com/fsnotify/fsnotify
+Upstream-Name: github.com/fsnotify/fsnotify
 
 Files: *
 Copyright: 2012 The Go Authors

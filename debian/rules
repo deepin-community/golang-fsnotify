@@ -1,4 +1,7 @@
 #!/usr/bin/make -f
 
+export DH_GOLANG_EXCLUDES := cmd/fsnotify
+export DH_GOLANG_EXCLUDES_ALL := 0
+
 %:
-	dh $@ --buildsystem=golang --with=golang
+	dh $@ --builddirectory=_build --buildsystem=golang
